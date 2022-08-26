@@ -1,0 +1,131 @@
+<div class="py-4">
+  <div class="d-flex justify-content-between w-100 flex-wrap">
+    <div class="mb-3 mb-lg-0">
+      <h1 class="h4">Daire Sakini Kaydı</h1>
+
+    </div>
+    <div>
+      <a href="" class="btn btn-outline-gray"><i class="far fa-question-circle me-1"></i> Yardım </a>
+    </div>
+  </div>
+</div>
+
+<%= form_for @kisiler do |f| %>
+
+  <div class="row">
+    <div class="col-12 mb-4">
+      <div class="card border-0 shadow components-section">
+        <div class="card-body">
+          <div class="row mb-4">
+            <div class="col-lg-4 col-sm-6">
+              <!-- Form -->
+              <div class="mb-4">
+                <label class="my-1 me-2" for="country">Blok</label>
+                <%= f.text_field :adsoyad , class:"form-control ",placeholder:"Ad Soyad",:required => true %>
+              </div>
+              <div class="mb-4">
+                <label for="email">Telefon</label>
+                <%= f.text_field :telefon , class:"form-control ",placeholder:"Telefon" %>
+
+
+              </div>
+              <div class="mb-4">
+                <label class="my-1 me-2" for="country">E Posta</label>
+                <%= f.text_field :eposta , class:"form-control ",placeholder:"E Posta" %>
+
+
+
+              </div>
+              <div class="mb-4">
+                <label for="email">Adres</label>
+                <%= f.text_field :adres , class:"form-control ",placeholder:"Adres" %>
+
+              </div>
+
+            </div>
+            <div class="col-lg-4 col-sm-6">
+
+              <div class="mb-4">
+                <label for="email">Şifre</label>
+                <%= f.text_field :sifre , class:"form-control ",placeholder:"Şifre" %>
+
+              </div>
+              <div class="mb-4">
+                <label for="email">TC No</label>
+                <%= f.text_field :tcno , class:"form-control ",placeholder:"TC Kimlik No" %>
+
+              </div>
+              <div class="mb-4">
+                <label for="email">Doğum Tarihi</label>
+                <%= f.date_field :dogumtarihi , class:"form-control "%>
+
+              </div>
+              <div class="mb-4">
+                <label for="email">Meslek</label>
+                <%= f.text_field :meslek , class:"form-control ",placeholder:"Meslek" %>
+              </div>
+              <div class="mb-4">
+
+
+              </div>
+              <!-- Form -->
+
+            </div>
+            <div class="col-lg-4 col-sm-6">
+
+                <!--  Baglı daireler begin  -->
+
+              <div class="card border-0 shadow mb-4">
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table table-centered table-nowrap mb-0 rounded">
+                      <thead class="thead-light">
+                      <tr>
+                        <th class="border-0 rounded-start">Bağlı Daireler</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td><a href="#" class="text-primary fw-bold">Kayıt Yok</a>
+                          <a href="#" class="text-danger me-3">Ekle</a>
+                        </td>
+
+                      </tr>
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+
+          <div class="row mb-5 mb-lg-5">
+            <div class="col-lg-3 col-md-6">
+
+            </div>
+            <div class="col-lg-3 col-sm-6 mt-4 mt-md-0">
+              <!-- Radio -->
+
+            </div>
+            <div class="col-lg-3 col-sm-6 mt-4 mt-md-0">
+              <%= submit_tag "Kaydet", class:"btn btn-pill btn-outline-success"%>
+              <button class="btn btn-pill btn-outline-danger" type="button">İptal</button>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+<% end %>

@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  daireno: MyString
+  kat: MyString
+  brut: MyString
+  net: MyString
+  arsapayi: MyString
+  parksayisi: 1
+  peteksatisi: 1
+
+two:
+  daireno: MyString
+  kat: MyString
+  brut: MyString
+  net: MyString
+  arsapayi: MyString
+  parksayisi: 1
+  peteksatisi: 1

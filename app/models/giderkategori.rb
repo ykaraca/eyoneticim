@@ -1,0 +1,2 @@
+class Giderkategori < ApplicationRecord
+end
